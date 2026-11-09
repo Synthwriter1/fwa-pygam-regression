@@ -5,7 +5,7 @@
 ## Project Overview
 In healthcare fraud, waste, and abuse (FWA) auditing, intuition is a liability. Traditional linear models assume that financial exposure grows at a constant rate as provider volume increases, creating massive blind spots when analyzing extreme-volume billing entities. 
 
-The `fwa-claims-pipeline` is an open-source analytics architecture designed to detect complex claims variance and unpredictable billing behaviors that evade traditional linear audits. Built on a dataset of over 802,000 California CMS Medicare claims, this pipeline leverages transparent, "glass-box" statistical models—specifically Generalized Additive Models (PyGAM) and Interquartile Range (IQR) anomaly detection. 
+The `fwa-claims-pipeline` is an open-source analytics architecture designed to detect complex claims variance and unpredictable billing behaviors that evade traditional linear audits. Built on a dataset of over 802,000 California CMS Medicare claims, this pipeline leverages transparent, "glass-box" statistical models—specifically Generalized Additive Models (PyGAM).
 
 By mapping the exact volume thresholds where financial exposure accelerates and confidence intervals explode, this architecture translates abstract statistical uncertainty into precise, legally defensible risk-exposure intelligence.
 
@@ -21,7 +21,6 @@ By mapping the exact volume thresholds where financial exposure accelerates and 
 
 ### 2. Glass-Box Detection (The Core Engine)
 * **PyGAM Non-Linear Mapping:** Isolates aggressive financial exposure acceleration in mid-volume tiers (approx. 50,000 services) and quantifies exploding unpredictability at extreme high-volume tiers (100,000+ services).
-* **IQR Anomaly Detection:** Systematically flags statistical outliers and anomalous billing behaviors to provide a mathematically defensible threshold for audits.
 
 ### 3. Executive Output & Visualization
 * Processes anomaly flags and PyGAM expected values into optimized dimensional tables, ready for integration into interactive FWA dashboards (e.g., Tableau).
@@ -36,6 +35,6 @@ By mapping the exact volume thresholds where financial exposure accelerates and 
 fwa-claims-pipeline/
 ├── data/                  # (Gitignored) Raw and processed Medicare datasets
 ├── src/                   # Core Python execution scripts (e.g., Billing_variance_curve.py)
-├── images/                # Screenshots (PyGAM plots, Tableau dashboards)
+├── images/                # Screenshots (PyGAM plots)
 ├── requirements.txt       # Python dependencies (pygam, pandas, numpy)
 └── README.md              # Documentation and pipeline architecture
