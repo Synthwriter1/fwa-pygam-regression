@@ -1,6 +1,6 @@
 # FWA Claims Pipeline: PyGAM & The Shape of the Math
 
-**Companion Essay:** [The Shape of the Math: How PyGAM Exposed the Hidden Curve Inside 802,000 Medicare Claims](link-to-medium-article)
+**Companion Essay:** [The Shape of the Math: How PyGAM Exposed the Hidden Curve Inside 802,000 Medicare Claims](https://medium.com/@gregdamico82/the-shape-of-the-math-how-pygam-exposed-the-hidden-curve-inside-802-000-medicare-claims-eb2971aa694a?sharedUserId=gregdamico82)
 
 ## Project Overview
 In healthcare fraud, waste, and abuse (FWA) auditing, intuition is a liability. Traditional linear models assume that financial exposure grows at a constant rate as provider volume increases, creating massive blind spots when analyzing extreme-volume billing entities. 
