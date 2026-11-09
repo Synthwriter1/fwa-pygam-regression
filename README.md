@@ -35,7 +35,6 @@ By mapping the exact volume thresholds where financial exposure accelerates and 
 ```text
 fwa-claims-pipeline/
 ├── data/                  # (Gitignored) Raw and processed Medicare datasets
-├── notebooks/             # Jupyter notebooks for exploratory PyGAM analysis
 ├── src/                   # Core Python execution scripts (e.g., Billing_variance_curve.py)
 ├── images/                # Screenshots (PyGAM plots, Tableau dashboards)
 ├── requirements.txt       # Python dependencies (pygam, pandas, numpy)
